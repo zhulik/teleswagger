@@ -11,5 +11,5 @@ Swagger Codegen version: 2.2.3
 =end
 
 module Teleswagger
-  VERSION = "0.0.1"
+  VERSION = "0.1.0"
 end
