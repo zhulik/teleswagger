@@ -1,6 +1,6 @@
 # Teleswagger::UsersApi
 
-All URIs are relative to *https://api.telegram.org*
+All URIs are relative to *https://api.telegram.org/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **get_me**
-> InlineResponse200 get_me(token, )
+> InlineResponse2007 get_me(token, )
 
 
 
@@ -41,7 +41,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2007**](InlineResponse2007.md)
 
 ### Authorization
 
@@ -55,7 +55,7 @@ No authorization required
 
 
 # **get_user_profile_photos**
-> InlineResponse2001 get_user_profile_photos(token, user_id, opts)
+> InlineResponse2009 get_user_profile_photos(token, user_id, opts)
 
 
 
@@ -96,7 +96,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2009**](InlineResponse2009.md)
 
 ### Authorization
 

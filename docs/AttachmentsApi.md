@@ -1,9 +1,10 @@
 # Teleswagger::AttachmentsApi
 
-All URIs are relative to *https://api.telegram.org*
+All URIs are relative to *https://api.telegram.org/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
+[**edit_message_live_location**](AttachmentsApi.md#edit_message_live_location) | **POST** /bot{token}/editMessageLiveLocation | 
 [**get_file**](AttachmentsApi.md#get_file) | **GET** /bot{token}/getFile | 
 [**send_audio**](AttachmentsApi.md#send_audio) | **POST** /bot{token}/sendAudio | 
 [**send_audio_link**](AttachmentsApi.md#send_audio_link) | **POST** /bot{token}/sendAudio#link | 
@@ -11,6 +12,7 @@ Method | HTTP request | Description
 [**send_document**](AttachmentsApi.md#send_document) | **POST** /bot{token}/sendDocument | 
 [**send_document_link**](AttachmentsApi.md#send_document_link) | **POST** /bot{token}/sendDocument#link | 
 [**send_location**](AttachmentsApi.md#send_location) | **POST** /bot{token}/sendLocation | 
+[**send_media_group_link**](AttachmentsApi.md#send_media_group_link) | **POST** /bot{token}/sendMediaGroup#link | 
 [**send_photo**](AttachmentsApi.md#send_photo) | **POST** /bot{token}/sendPhoto | 
 [**send_photo_link**](AttachmentsApi.md#send_photo_link) | **POST** /bot{token}/sendPhoto#link | 
 [**send_sticker**](AttachmentsApi.md#send_sticker) | **POST** /bot{token}/sendSticker | 
@@ -22,10 +24,61 @@ Method | HTTP request | Description
 [**send_video_note_link**](AttachmentsApi.md#send_video_note_link) | **POST** /bot{token}/sendVideoNote#link | 
 [**send_voice**](AttachmentsApi.md#send_voice) | **POST** /bot{token}/sendVoice | 
 [**send_voice_link**](AttachmentsApi.md#send_voice_link) | **POST** /bot{token}/sendVoice#link | 
+[**stop_message_live_location**](AttachmentsApi.md#stop_message_live_location) | **POST** /bot{token}/stopMessageLiveLocation | 
+
+
+# **edit_message_live_location**
+> ResponseMessage edit_message_live_location(token, , opts)
+
+
+
+
+
+### Example
+```ruby
+# load the gem
+require 'teleswagger'
+
+api_instance = Teleswagger::AttachmentsApi.new
+
+token = "token_example" # String | bot's token to authorize the request
+
+opts = { 
+  body: Teleswagger::EditMessageLiveLocationBody.new # EditMessageLiveLocationBody | 
+}
+
+begin
+  result = api_instance.edit_message_live_location(token, , opts)
+  p result
+rescue Teleswagger::ApiError => e
+  puts "Exception when calling AttachmentsApi->edit_message_live_location: #{e}"
+end
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **token** | **String**| bot&#39;s token to authorize the request | 
+ **body** | [**EditMessageLiveLocationBody**](EditMessageLiveLocationBody.md)|  | [optional] 
+
+### Return type
+
+[**ResponseMessage**](ResponseMessage.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
 
 
 # **get_file**
-> InlineResponse2002 get_file(token, file_id)
+> InlineResponse2005 get_file(token, file_id)
 
 
 
@@ -60,7 +113,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2005**](InlineResponse2005.md)
 
 ### Authorization
 
@@ -95,6 +148,7 @@ audio = File.new("/path/to/file.txt") # File |
 
 opts = { 
   caption: "caption_example", # String | 
+  parse_mode: "parse_mode_example", # String | 
   duration: 56, # Integer | 
   performer: "performer_example", # String | 
   title: "title_example", # String | 
@@ -119,6 +173,7 @@ Name | Type | Description  | Notes
  **chat_id** | **String**|  | 
  **audio** | **File**|  | 
  **caption** | **String**|  | [optional] 
+ **parse_mode** | **String**|  | [optional] 
  **duration** | **Integer**|  | [optional] 
  **performer** | **String**|  | [optional] 
  **title** | **String**|  | [optional] 
@@ -263,6 +318,7 @@ document = File.new("/path/to/file.txt") # File |
 
 opts = { 
   caption: "caption_example", # String | 
+  parse_mode: "parse_mode_example", # String | 
   disable_notification: true, # BOOLEAN | 
   reply_to_message_id: 56, # Integer | 
   reply_markup: "reply_markup_example" # String | json string of reply_markup object
@@ -284,6 +340,7 @@ Name | Type | Description  | Notes
  **chat_id** | **String**|  | 
  **document** | **File**|  | 
  **caption** | **String**|  | [optional] 
+ **parse_mode** | **String**|  | [optional] 
  **disable_notification** | **BOOLEAN**|  | [optional] 
  **reply_to_message_id** | **Integer**|  | [optional] 
  **reply_markup** | **String**| json string of reply_markup object | [optional] 
@@ -403,6 +460,56 @@ No authorization required
 
 
 
+# **send_media_group_link**
+> ResponseMessage send_media_group_link(token, , opts)
+
+
+
+
+
+### Example
+```ruby
+# load the gem
+require 'teleswagger'
+
+api_instance = Teleswagger::AttachmentsApi.new
+
+token = "token_example" # String | bot's token to authorize the request
+
+opts = { 
+  body: Teleswagger::SendMediaGroupLinkBody.new # SendMediaGroupLinkBody | 
+}
+
+begin
+  result = api_instance.send_media_group_link(token, , opts)
+  p result
+rescue Teleswagger::ApiError => e
+  puts "Exception when calling AttachmentsApi->send_media_group_link: #{e}"
+end
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **token** | **String**| bot&#39;s token to authorize the request | 
+ **body** | [**SendMediaGroupLinkBody**](SendMediaGroupLinkBody.md)|  | [optional] 
+
+### Return type
+
+[**ResponseMessage**](ResponseMessage.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+
+
 # **send_photo**
 > ResponseMessage send_photo(token, chat_id, photo, opts)
 
@@ -425,6 +532,7 @@ photo = File.new("/path/to/file.txt") # File |
 
 opts = { 
   caption: "caption_example", # String | 
+  parse_mode: "parse_mode_example", # String | 
   disable_notification: true, # BOOLEAN | 
   reply_to_message_id: 56, # Integer | 
   reply_markup: "reply_markup_example" # String | json string of reply_markup object
@@ -446,6 +554,7 @@ Name | Type | Description  | Notes
  **chat_id** | **String**|  | 
  **photo** | **File**|  | 
  **caption** | **String**|  | [optional] 
+ **parse_mode** | **String**|  | [optional] 
  **disable_notification** | **BOOLEAN**|  | [optional] 
  **reply_to_message_id** | **Integer**|  | [optional] 
  **reply_markup** | **String**| json string of reply_markup object | [optional] 
@@ -700,6 +809,7 @@ opts = {
   width: 56, # Integer | 
   height: 56, # Integer | 
   caption: "caption_example", # String | 
+  parse_mode: "parse_mode_example", # String | 
   disable_notification: true, # BOOLEAN | 
   reply_to_message_id: 56, # Integer | 
   reply_markup: "reply_markup_example" # String | json string of reply_markup object
@@ -724,6 +834,7 @@ Name | Type | Description  | Notes
  **width** | **Integer**|  | [optional] 
  **height** | **Integer**|  | [optional] 
  **caption** | **String**|  | [optional] 
+ **parse_mode** | **String**|  | [optional] 
  **disable_notification** | **BOOLEAN**|  | [optional] 
  **reply_to_message_id** | **Integer**|  | [optional] 
  **reply_markup** | **String**| json string of reply_markup object | [optional] 
@@ -929,6 +1040,7 @@ voice = File.new("/path/to/file.txt") # File |
 
 opts = { 
   caption: "caption_example", # String | 
+  parse_mode: "parse_mode_example", # String | 
   duration: 56, # Integer | 
   disable_notification: true, # BOOLEAN | 
   reply_to_message_id: 56, # Integer | 
@@ -951,6 +1063,7 @@ Name | Type | Description  | Notes
  **chat_id** | **String**|  | 
  **voice** | **File**|  | 
  **caption** | **String**|  | [optional] 
+ **parse_mode** | **String**|  | [optional] 
  **duration** | **Integer**|  | [optional] 
  **disable_notification** | **BOOLEAN**|  | [optional] 
  **reply_to_message_id** | **Integer**|  | [optional] 
@@ -1005,6 +1118,56 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **token** | **String**| bot&#39;s token to authorize the request | 
  **body** | [**SendVoiceLinkBody**](SendVoiceLinkBody.md)|  | [optional] 
+
+### Return type
+
+[**ResponseMessage**](ResponseMessage.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+
+
+# **stop_message_live_location**
+> ResponseMessage stop_message_live_location(token, , opts)
+
+
+
+
+
+### Example
+```ruby
+# load the gem
+require 'teleswagger'
+
+api_instance = Teleswagger::AttachmentsApi.new
+
+token = "token_example" # String | bot's token to authorize the request
+
+opts = { 
+  body: Teleswagger::StopMessageLiveLocationBody.new # StopMessageLiveLocationBody | 
+}
+
+begin
+  result = api_instance.stop_message_live_location(token, , opts)
+  p result
+rescue Teleswagger::ApiError => e
+  puts "Exception when calling AttachmentsApi->stop_message_live_location: #{e}"
+end
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **token** | **String**| bot&#39;s token to authorize the request | 
+ **body** | [**StopMessageLiveLocationBody**](StopMessageLiveLocationBody.md)|  | [optional] 
 
 ### Return type
 

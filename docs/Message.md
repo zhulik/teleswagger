@@ -15,6 +15,7 @@ Name | Type | Description | Notes
 **edit_date** | **Integer** |  | [optional] 
 **text** | **String** |  | [optional] 
 **entities** | [**Array&lt;MessageEntity&gt;**](MessageEntity.md) |  | [optional] 
+**caption_entities** | [**Array&lt;MessageEntity&gt;**](MessageEntity.md) |  | [optional] 
 **audio** | [**Audio**](Audio.md) |  | [optional] 
 **document** | [**Document**](Document.md) |  | [optional] 
 **game** | [**Game**](Game.md) |  | [optional] 
@@ -38,8 +39,10 @@ Name | Type | Description | Notes
 **migrate_to_chat_id** | **Integer** |  | [optional] 
 **migrate_from_chat_id** | **Integer** |  | [optional] 
 **pinned_message** | [**Message**](Message.md) |  | [optional] 
+**invoice** | [**Invoice**](Invoice.md) |  | [optional] 
 **successful_payment** | [**SuccessfulPayment**](SuccessfulPayment.md) |  | [optional] 
 **forward_signature** | **String** |  | [optional] 
 **author_signature** | **String** |  | [optional] 
+**connected_website** | **String** |  | [optional] 
 
 

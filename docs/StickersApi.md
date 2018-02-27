@@ -1,6 +1,6 @@
 # Teleswagger::StickersApi
 
-All URIs are relative to *https://api.telegram.org*
+All URIs are relative to *https://api.telegram.org/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -292,7 +292,7 @@ No authorization required
 
 
 # **get_sticker_set**
-> InlineResponse2009 get_sticker_set(token, name)
+> InlineResponse2008 get_sticker_set(token, name)
 
 
 
@@ -327,7 +327,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2009**](InlineResponse2009.md)
+[**InlineResponse2008**](InlineResponse2008.md)
 
 ### Authorization
 

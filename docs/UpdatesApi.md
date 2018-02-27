@@ -1,11 +1,11 @@
 # Teleswagger::UpdatesApi
 
-All URIs are relative to *https://api.telegram.org*
+All URIs are relative to *https://api.telegram.org/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**delete_webhook**](UpdatesApi.md#delete_webhook) | **GET** /bot{token}/deleteWebhook | 
-[**get_updates**](UpdatesApi.md#get_updates) | **GET** /bot{token}/getUpdates | 
+[**get_updates**](UpdatesApi.md#get_updates) | **POST** /bot{token}/getUpdates | 
 [**get_webhook_info**](UpdatesApi.md#get_webhook_info) | **GET** /bot{token}/getWebhookInfo | 
 [**set_webhook**](UpdatesApi.md#set_webhook) | **POST** /bot{token}/setWebhook | 
 
@@ -68,9 +68,7 @@ token = "token_example" # String | bot's token to authorize the request
 
 opts = { 
   offset: 56, # Integer | 
-  limit: 56, # Integer | 
-  timeout: 56, # Integer | 
-  allowed_updates: ["allowed_updates_example"] # Array<String> | 
+  body: Teleswagger::GetUpdatesBody.new # GetUpdatesBody | 
 }
 
 begin
@@ -87,9 +85,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **token** | **String**| bot&#39;s token to authorize the request | 
  **offset** | **Integer**|  | [optional] 
- **limit** | **Integer**|  | [optional] 
- **timeout** | **Integer**|  | [optional] 
- **allowed_updates** | [**Array&lt;String&gt;**](String.md)|  | [optional] 
+ **body** | [**GetUpdatesBody**](GetUpdatesBody.md)|  | [optional] 
 
 ### Return type
 

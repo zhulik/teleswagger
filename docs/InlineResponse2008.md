@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**result** | [**GameHighScore**](GameHighScore.md) |  | [optional] 
+**result** | [**StickerSet**](StickerSet.md) |  | [optional] 
 **error_code** | **Integer** |  | [optional] 
 **ok** | **BOOLEAN** |  | [optional] 
 **description** | **String** |  | [optional] 

@@ -11,6 +11,7 @@ Name | Type | Description | Notes
 **start_parameter** | **String** |  | 
 **currency** | **String** |  | 
 **prices** | [**Array&lt;LabeledPrice&gt;**](LabeledPrice.md) |  | 
+**provider_data** | **String** |  | [optional] 
 **photo_url** | **String** |  | [optional] 
 **photo_size** | **Integer** |  | [optional] 
 **photo_width** | **Integer** |  | [optional] 

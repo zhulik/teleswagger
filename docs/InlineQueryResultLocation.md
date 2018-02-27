@@ -13,5 +13,6 @@ Name | Type | Description | Notes
 **thumb_url** | **String** |  | [optional] 
 **thumb_width** | **Integer** |  | [optional] 
 **thumb_height** | **Integer** |  | [optional] 
+**live_period** | **Integer** |  | [optional] 
 
 

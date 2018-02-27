@@ -1,6 +1,6 @@
 # Teleswagger::CallbacksApi
 
-All URIs are relative to *https://api.telegram.org*
+All URIs are relative to *https://api.telegram.org/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **answer_callback_query**
-> ResponseBool answer_callback_query(token, callback_query_id, text, show_alert, url, cache_time)
+> ResponseBool answer_callback_query(token, body)
 
 
 
@@ -23,19 +23,11 @@ api_instance = Teleswagger::CallbacksApi.new
 
 token = "token_example" # String | bot's token to authorize the request
 
-callback_query_id = "callback_query_id_example" # String | 
-
-text = "text_example" # String | 
-
-show_alert = true # BOOLEAN | 
-
-url = "url_example" # String | 
-
-cache_time = 56 # Integer | 
+body = Teleswagger::AnswerCallbackQueryBody.new # AnswerCallbackQueryBody | 
 
 
 begin
-  result = api_instance.answer_callback_query(token, callback_query_id, text, show_alert, url, cache_time)
+  result = api_instance.answer_callback_query(token, body)
   p result
 rescue Teleswagger::ApiError => e
   puts "Exception when calling CallbacksApi->answer_callback_query: #{e}"
@@ -47,11 +39,7 @@ end
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **token** | **String**| bot&#39;s token to authorize the request | 
- **callback_query_id** | **String**|  | 
- **text** | **String**|  | 
- **show_alert** | **BOOLEAN**|  | 
- **url** | **String**|  | 
- **cache_time** | **Integer**|  | 
+ **body** | [**AnswerCallbackQueryBody**](AnswerCallbackQueryBody.md)|  | 
 
 ### Return type
 
@@ -63,7 +51,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/x-www-form-urlencoded
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 

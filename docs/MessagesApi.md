@@ -1,6 +1,6 @@
 # Teleswagger::MessagesApi
 
-All URIs are relative to *https://api.telegram.org*
+All URIs are relative to *https://api.telegram.org/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -66,7 +66,7 @@ No authorization required
 
 
 # **edit_message_caption**
-> InlineResponse2007 edit_message_caption(token, , opts)
+> InlineResponse200 edit_message_caption(token, , opts)
 
 
 
@@ -102,7 +102,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2007**](InlineResponse2007.md)
+[**InlineResponse200**](InlineResponse200.md)
 
 ### Authorization
 
@@ -116,7 +116,7 @@ No authorization required
 
 
 # **edit_message_reply_markup**
-> InlineResponse2007 edit_message_reply_markup(token, , opts)
+> InlineResponse200 edit_message_reply_markup(token, , opts)
 
 
 
@@ -152,7 +152,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2007**](InlineResponse2007.md)
+[**InlineResponse200**](InlineResponse200.md)
 
 ### Authorization
 
@@ -166,7 +166,7 @@ No authorization required
 
 
 # **edit_message_text**
-> InlineResponse2007 edit_message_text(token, , opts)
+> InlineResponse200 edit_message_text(token, , opts)
 
 
 
@@ -202,7 +202,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2007**](InlineResponse2007.md)
+[**InlineResponse200**](InlineResponse200.md)
 
 ### Authorization
 

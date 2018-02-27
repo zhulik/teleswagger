@@ -12,6 +12,7 @@ Name | Type | Description | Notes
 **thumb_url** | **String** |  | 
 **title** | **String** |  | [optional] 
 **caption** | **String** |  | [optional] 
+**parse_mode** | [**ParseMode**](ParseMode.md) |  | [optional] 
 **reply_markup** | [**InlineKeyboardMarkup**](InlineKeyboardMarkup.md) |  | [optional] 
 **input_message_content** | **Object** |  | [optional] 
 

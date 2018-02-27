@@ -10,6 +10,7 @@ Name | Type | Description | Notes
 **thumb_url** | **String** |  | 
 **title** | **String** |  | 
 **caption** | **String** |  | [optional] 
+**parse_mode** | [**ParseMode**](ParseMode.md) |  | [optional] 
 **video_width** | **Integer** |  | [optional] 
 **video_height** | **Integer** |  | [optional] 
 **video_duration** | **Integer** |  | [optional] 

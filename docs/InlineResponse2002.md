@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**result** | **File** |  | [optional] 
+**result** | [**Array&lt;ChatMember&gt;**](ChatMember.md) |  | [optional] 
 **error_code** | **Integer** |  | [optional] 
 **ok** | **BOOLEAN** |  | [optional] 
 **description** | **String** |  | [optional] 

@@ -7,6 +7,7 @@ Name | Type | Description | Notes
 **id** | **String** |  | 
 **title** | **String** |  | 
 **caption** | **String** |  | [optional] 
+**parse_mode** | [**ParseMode**](ParseMode.md) |  | [optional] 
 **document_url** | **String** |  | 
 **mime_type** | **String** |  | 
 **description** | **String** |  | [optional] 

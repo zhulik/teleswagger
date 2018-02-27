@@ -1,10 +1,11 @@
 # Teleswagger::ChatsApi
 
-All URIs are relative to *https://api.telegram.org*
+All URIs are relative to *https://api.telegram.org/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**delete_chat_photo**](ChatsApi.md#delete_chat_photo) | **POST** /bot{token}/deleteChatPhoto | 
+[**delete_chat_sticker_set**](ChatsApi.md#delete_chat_sticker_set) | **GET** /bot{token}/deleteChatStickerSet | 
 [**export_chat_invite_link**](ChatsApi.md#export_chat_invite_link) | **GET** /bot{token}/exportChatInviteLink | 
 [**get_chat**](ChatsApi.md#get_chat) | **GET** /bot{token}/getChat | 
 [**get_chat_administrators**](ChatsApi.md#get_chat_administrators) | **GET** /bot{token}/getChatAdministrators | 
@@ -18,6 +19,7 @@ Method | HTTP request | Description
 [**send_chat_action**](ChatsApi.md#send_chat_action) | **GET** /bot{token}/sendChatAction | 
 [**set_chat_description**](ChatsApi.md#set_chat_description) | **POST** /bot{token}/setChatDescription | 
 [**set_chat_photo**](ChatsApi.md#set_chat_photo) | **GET** /bot{token}/setChatPhoto | 
+[**set_chat_sticker_set**](ChatsApi.md#set_chat_sticker_set) | **GET** /bot{token}/setChatStickerSet | 
 [**set_chat_title**](ChatsApi.md#set_chat_title) | **POST** /bot{token}/setChatTitle | 
 [**unban_chat_member**](ChatsApi.md#unban_chat_member) | **GET** /bot{token}/unbanChatMember | 
 [**unpin_chat_message**](ChatsApi.md#unpin_chat_message) | **POST** /bot{token}/unpinChatMessage | 
@@ -47,6 +49,55 @@ begin
   p result
 rescue Teleswagger::ApiError => e
   puts "Exception when calling ChatsApi->delete_chat_photo: #{e}"
+end
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **token** | **String**| bot&#39;s token to authorize the request | 
+ **chat_id** | **String**|  | 
+
+### Return type
+
+[**ResponseBool**](ResponseBool.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+
+
+# **delete_chat_sticker_set**
+> ResponseBool delete_chat_sticker_set(token, chat_id)
+
+
+
+
+
+### Example
+```ruby
+# load the gem
+require 'teleswagger'
+
+api_instance = Teleswagger::ChatsApi.new
+
+token = "token_example" # String | bot's token to authorize the request
+
+chat_id = "chat_id_example" # String | 
+
+
+begin
+  result = api_instance.delete_chat_sticker_set(token, chat_id)
+  p result
+rescue Teleswagger::ApiError => e
+  puts "Exception when calling ChatsApi->delete_chat_sticker_set: #{e}"
 end
 ```
 
@@ -122,7 +173,7 @@ No authorization required
 
 
 # **get_chat**
-> InlineResponse2003 get_chat(token, chat_id)
+> InlineResponse2001 get_chat(token, chat_id)
 
 
 
@@ -157,7 +208,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2003**](InlineResponse2003.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -171,7 +222,7 @@ No authorization required
 
 
 # **get_chat_administrators**
-> InlineResponse2004 get_chat_administrators(token, chat_id)
+> InlineResponse2002 get_chat_administrators(token, chat_id)
 
 
 
@@ -206,7 +257,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2004**](InlineResponse2004.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -220,7 +271,7 @@ No authorization required
 
 
 # **get_chat_member**
-> InlineResponse2006 get_chat_member(token, chat_id, user_id)
+> InlineResponse2003 get_chat_member(token, chat_id, user_id)
 
 
 
@@ -258,7 +309,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2006**](InlineResponse2006.md)
+[**InlineResponse2003**](InlineResponse2003.md)
 
 ### Authorization
 
@@ -272,7 +323,7 @@ No authorization required
 
 
 # **get_chat_members_count**
-> InlineResponse2005 get_chat_members_count(token, chat_id)
+> InlineResponse2004 get_chat_members_count(token, chat_id)
 
 
 
@@ -307,7 +358,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2005**](InlineResponse2005.md)
+[**InlineResponse2004**](InlineResponse2004.md)
 
 ### Authorization
 
@@ -731,6 +782,58 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: multipart/form-data
+ - **Accept**: application/json
+
+
+
+# **set_chat_sticker_set**
+> ResponseBool set_chat_sticker_set(token, chat_id, sticker_set_name)
+
+
+
+
+
+### Example
+```ruby
+# load the gem
+require 'teleswagger'
+
+api_instance = Teleswagger::ChatsApi.new
+
+token = "token_example" # String | bot's token to authorize the request
+
+chat_id = "chat_id_example" # String | 
+
+sticker_set_name = "sticker_set_name_example" # String | 
+
+
+begin
+  result = api_instance.set_chat_sticker_set(token, chat_id, sticker_set_name)
+  p result
+rescue Teleswagger::ApiError => e
+  puts "Exception when calling ChatsApi->set_chat_sticker_set: #{e}"
+end
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **token** | **String**| bot&#39;s token to authorize the request | 
+ **chat_id** | **String**|  | 
+ **sticker_set_name** | **String**|  | 
+
+### Return type
+
+[**ResponseBool**](ResponseBool.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 

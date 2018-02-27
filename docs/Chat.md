@@ -14,5 +14,7 @@ Name | Type | Description | Notes
 **description** | **String** |  | [optional] 
 **invite_link** | **String** |  | [optional] 
 **pinned_message** | [**Message**](Message.md) |  | [optional] 
+**sticker_set_name** | **String** |  | [optional] 
+**can_set_sticker_set** | **BOOLEAN** |  | [optional] 
 
 

@@ -1,6 +1,6 @@
 # Teleswagger::GamesApi
 
-All URIs are relative to *https://api.telegram.org*
+All URIs are relative to *https://api.telegram.org/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 
 # **get_game_high_scores**
-> InlineResponse2008 get_game_high_scores(token, user_id, opts)
+> InlineResponse2006 get_game_high_scores(token, user_id, opts)
 
 
 
@@ -53,7 +53,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2008**](InlineResponse2008.md)
+[**InlineResponse2006**](InlineResponse2006.md)
 
 ### Authorization
 
@@ -117,7 +117,7 @@ No authorization required
 
 
 # **set_game_score**
-> InlineResponse2007 set_game_score(token, user_id, score, opts)
+> InlineResponse200 set_game_score(token, user_id, score, opts)
 
 
 
@@ -167,7 +167,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2007**](InlineResponse2007.md)
+[**InlineResponse200**](InlineResponse200.md)
 
 ### Authorization
 

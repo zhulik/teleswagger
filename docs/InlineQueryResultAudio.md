@@ -8,6 +8,7 @@ Name | Type | Description | Notes
 **audio_url** | **String** |  | 
 **title** | **String** |  | 
 **caption** | **String** |  | [optional] 
+**parse_mode** | [**ParseMode**](ParseMode.md) |  | [optional] 
 **performer** | **String** |  | [optional] 
 **audio_duration** | **Integer** |  | [optional] 
 **input_message_content** | **Object** |  | [optional] 
