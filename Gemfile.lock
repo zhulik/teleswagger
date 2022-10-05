@@ -9,8 +9,8 @@ GEM
   remote: https://rubygems.org/
   specs:
     ZenTest (4.11.1)
-    addressable (2.5.2)
-      public_suffix (>= 2.0.2, < 4.0)
+    addressable (2.8.1)
+      public_suffix (>= 2.0.2, < 6.0)
     autotest (4.4.6)
       ZenTest (>= 4.4.1)
     autotest-fsevent (0.2.12)
@@ -25,7 +25,7 @@ GEM
     ffi (1.12.2)
     hashdiff (0.3.6)
     json (1.8.6)
-    public_suffix (3.0.0)
+    public_suffix (5.0.0)
     rake (13.0.1)
     rspec (3.6.0)
       rspec-core (~> 3.6.0)
